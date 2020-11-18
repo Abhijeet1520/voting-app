@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import ParticlesBg from 'particles-bg';
 
@@ -27,9 +27,6 @@ let config = {
         ctx.closePath();
     }
 };
-  
-const Particles = (
-)
 export function Particles(){
     return (
         <ParticlesBg color="#ff0000" num={200} type="circle" bg={true} />
