@@ -4,4 +4,3 @@ export * from './FullPage';
 export * from './DownArrow';
 export * from './PageLayout';
 export * from './FixedBgImage';
-export * from './ParticleBg';
