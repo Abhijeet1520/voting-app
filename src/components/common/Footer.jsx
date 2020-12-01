@@ -7,7 +7,6 @@ export function Footer(){
         color: '#FFF0F5',
         height: '50px',
         position: 'absolute',
-        color: 'white',
         margin: 0,
         padding: 0,
         bottom: 0,
