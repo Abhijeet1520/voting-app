@@ -6,7 +6,7 @@ import { LoginPage } from 'components/common/LoginPage';
 const AdminPage = () => {
     return (
         <PageLayout>
-            <LoginPage />
+            <LoginPage modalType='admin'/>
         </PageLayout>
     )
 }
