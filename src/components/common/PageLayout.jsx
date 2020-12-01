@@ -1,28 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Header } from './Header';
 import { Footer } from './Footer';
-
-const Content = styled.main`
-    max-width:100%;
-    margin-top: 60px;
-    //margin: 60px auto 0 auto;
-    //padding: 0 16px;
-    box-sizing; border-box;
-    font-family: 'Open-Sans';
-    
-    h1, h2, h3, h4, h5, h6{
-        font-family: 'kaushan Script';
-    }
-`;
 
 export function PageLayout({ children }) {
     return (
         <>
             <Header />
-            <Content>
+            <main style={{marginTop: '60px', maxWidth:'100%',fontFamily:'Open-Sans',}}>
                 {children}
-            </Content>
+            </main>
             <Footer />
         </>
     )

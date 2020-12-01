@@ -3,18 +3,19 @@ import styled from 'styled-components';
 import {Link as ReactRouterDomLink, useLocation} from 'react-router-dom';
 
 const HeaderWrapper = styled.header`
-    height: 60px;
-    width: 100%;
-    z-index: 100;
+    background-color: #12232E;
+    width: 100vw;
+    text-align: center;
+    font-size: 25px;
+    color: #0fFfff;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
     justify-content: center;
     box-sizing: border-box;
     display: flex;
-    padding: 0 16px;
-    top: 0;
-    position: fixed;
-    background: white;
-    border-bottom: 3px solid #4ffd8d;
+    padding: 0 16px;    
 `;
 
 const Menu = styled.nav`
@@ -27,7 +28,6 @@ const Menu = styled.nav`
     left: 0;
     padding: 8px;
     border-sizing: border-box;
-    border-bottom: 3px solid #fdd54f;
     background: white;
     
     @media(min-width: 768px){
@@ -90,8 +90,8 @@ export function Header(){
     return (
         <HeaderWrapper>
             <Link to="/"> 
-                <LogoText color="#4C9FFF">Abhi1520</LogoText>
-                <LogoText color="#3D71EB">.dev</LogoText>
+                <LogoText color="#4C9FFF">Vote Gauge - Make Your Vote Count!
+</LogoText>
             </Link>
             <MobileMenuIcon onClick={() => setMenuOpen(s => !s)}>
                 <div />
@@ -102,8 +102,11 @@ export function Header(){
                 <StyledLink to="/" isActive={pathname === '/'}>
                     Home
                 </StyledLink> 
-                <StyledLink to="/contact" isActive={pathname === '/contact'}>
-                    Contact
+                <StyledLink to="/admin" isActive={pathname === '/admin'}>
+                    Admin
+                </StyledLink>
+                <StyledLink to="/voter" isActive={pathname === '/voter'}>
+                    Voter
                 </StyledLink>
             </Menu>
         </HeaderWrapper>

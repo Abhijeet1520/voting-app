@@ -1,6 +1,4 @@
 export * from './Header';
 export * from './Footer';
-export * from './FullPage';
-export * from './DownArrow';
+export * from './LoginPage';
 export * from './PageLayout';
-export * from './FixedBgImage';

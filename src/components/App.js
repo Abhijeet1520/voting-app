@@ -1,6 +1,6 @@
 import {React} from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import {HomePage, ErrorPage, ContactPage} from "components/pages";
+import {HomePage, AdminPage, VoterPage, ErrorPage} from "components/pages";
 import { WebsiteContextProvider } from "context/WebsiteContext";
 import {createGlobalStyle} from "styled-components";
 
@@ -17,7 +17,8 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/contact" component={ContactPage} />
+          <Route exact path="/admin" component={AdminPage} />
+          <Route exact path="/voter" component={VoterPage} />
           <Route component={ErrorPage} />
         </Switch>
       </Router>
