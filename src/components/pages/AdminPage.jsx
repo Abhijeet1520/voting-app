@@ -1,7 +1,6 @@
 import React from 'react';
 //import firebase from 'context/firebase';
-import { PageLayout} from 'components/common';
-import { LoginPage } from 'components/common/LoginPage';
+import { PageLayout, LoginPage} from 'components/common';
 
 const AdminPage = () => {
     return (
