@@ -68,6 +68,7 @@ const LoginPage = ({modalType}) => {
             if (docs.docs[0].data()['email'].includes(emailField)){
                 // handleAuth()
                 setAlertShow(true);
+                setEmailField('');
             }else {
                 setErrorShow(`${emailField} is not included in ${modalType} email list!`);
                 setEmailField('');
@@ -101,10 +102,10 @@ const LoginPage = ({modalType}) => {
                     {submittingForm ? <Spinner animation="grow" variant="info" size="sm" /> : 'Submit'}
                 </Button>
             </form>
-            <Alert style={{display: 'sticky', margin: '-100px 10px 10px 10px', zIndex: 10000}} show={alertShow} variant='success' onClose={() => setAlertShow(false)} dismissible>
+            <Alert style={{display: 'sticky', margin: '0px 10px 10px 10px', zIndex: 10000}} show={alertShow} variant='success' onClose={() => setAlertShow(false)} dismissible>
                 Form Submitted successfully! Check your email for next steps
             </Alert>
-            <Alert style={{display: 'sticky', margin: '-140px 10px 10px 10px', zIndex: 10000}} show={errorShow} variant='danger' onClose={() => setErrorShow('')} dismissible>
+            <Alert style={{display: 'sticky', margin: '-10px 10px 10px 10px', zIndex: 10000}} show={errorShow} variant='danger' onClose={() => setErrorShow('')} dismissible>
                 <Alert.Heading>Error submitting the form!</Alert.Heading> 
                 {errorShow}
             </Alert>
