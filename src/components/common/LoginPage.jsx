@@ -70,12 +70,14 @@ const LoginPage = ({modalType}) => {
                 setAlertShow(true);
             }else {
                 setErrorShow(`${emailField} is not included in ${modalType} email list!`);
+                setEmailField('');
             }
             setSubmittingForm(false);
         })
         .catch(function(error) {    
             setErrorShow(error.message);
             setSubmittingForm(false);
+            setEmailField('');
         });
         // if (modalType == 'admin'){
         // }else of (modalType == 'voter'){
