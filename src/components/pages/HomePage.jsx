@@ -7,7 +7,7 @@ import {Row, Col} from 'react-bootstrap';
 const HomePage = () => {
     return (
         <PageLayout>
-            <div class='container-fluid btn-group align-middle' style={{
+            <div className='container-fluid btn-group align-middle' style={{
                         position: 'absolute',
                         top: '50%',
                         justifyContent: 'center',
@@ -16,14 +16,14 @@ const HomePage = () => {
             <Row>
                 <Col>
                     <Link to="/voter">
-                        <button type="button" class="btn btn-lg btn-block btn-primary xs-1 sm-1 col voter">
+                        <button type="button" className="btn btn-lg btn-block btn-primary xs-1 sm-1 col voter">
                             Voter Login 
                         </button>
                     </Link>
                 </Col>
                 <Col>
                     <Link to="/admin">
-                        <button type="button" class="btn btn-lg btn-block btn-primary xs-1 sm-1 col admin">
+                        <button type="button" className="btn btn-lg btn-block btn-primary xs-1 sm-1 col admin">
                             Admin Login 
                         </button>
                     </Link>
