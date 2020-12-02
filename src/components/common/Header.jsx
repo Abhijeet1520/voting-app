@@ -24,7 +24,7 @@ const Menu = styled.nav`
     justify-content: center;
     position: absolute;
     width: 100%;
-    top: 60px;
+    top: 40px;
     left: 0;
     padding: 8px;
     border-sizing: border-box;
