@@ -5,7 +5,7 @@ import { PageLayout, LoginPage } from 'components/common';
 const VoterPage = () => {
     return (
         <PageLayout>
-            <LoginPage modalType='admin'/>
+            <LoginPage modalType='voter'/>
         </PageLayout>
     )
 }
