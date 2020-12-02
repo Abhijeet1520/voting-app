@@ -18,9 +18,15 @@ export function Footer(){
     }}>
         Copyright &copy; 2020
         <Link to="/" style={{textAlign: 'center', fontWeight: 'bold', padding: '4px 8px'}}> 
-            <span style={{color:"#4C9FFF"}}>Shirsh Khandelia</span>
-            <span> & </span>
-            <span style={{color:"#3D71EB"}}>Kunal Ghosh</span>
+            <span style={{color:"#449FFF"}}>Abhijeet</span>
+        </Link>
+            <span>, </span>
+        <Link to="/" style={{textAlign: 'center', fontWeight: 'bold', padding: '4px 8px'}}> 
+            <span style={{color:"#4CCFFF"}}>Shirsh</span>
+        </Link>
+            <span>, </span>
+        <Link to="/" style={{textAlign: 'center', fontWeight: 'bold', padding: '4px 8px'}}> 
+            <span style={{color:"#3D71EB"}}>Kunal</span>
         </Link>
         
     </footer>)
